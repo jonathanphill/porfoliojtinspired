@@ -1,0 +1,33 @@
+.footer {
+    // background: #111;
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.footerLink:hover,
+.socialListLink:hover {
+    opacity: .7;
+}
+
+.footerLink:hover {
+    text-decoration: underline;
+}
+
+.socialList {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+    padding: 0;
+
+
+}
+
+.socialListItem {
+
+    margin: 0 .5em;
+}
+
+.socialListLink {
+    padding: .5em;
+}
