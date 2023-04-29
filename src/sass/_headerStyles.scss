@@ -1,0 +1,25 @@
+.headerContent{
+    margin-top: 5em;
+}
+.heroImg{
+    border: 2px solid black;
+    position: relative;
+    height: 30vmin;
+    background-color: var(--clr-light);
+}
+.mainImg{
+    width: 100px;
+    height: 110px;
+    border-radius: 9999px;
+    border:4px solid white;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    left: 8%;
+}
+.headerText{
+    margin-top: 3em;
+    h1{
+        font-size: var(--step-3);
+    }
+}

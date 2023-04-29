@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="wrapper headerContent">
+        <div class="heroImg">
+            <p>some text</p>
+
+            <img class="mainImg" src="./assets/jp.png" alt="">
+
+        </div>
+
+        <div class="headerText">
+            <h1>Jonathan Phillips 👋</h1>
+            <p>Growing one step at a time 🪜</p>
+        </div>
+
+        
+    </header>
+    <main class="wrapper">
+        
+        <div class="features">
+            <ul class="featureItems wrapper2">
+                <!-- What I Do -->
+                <li class="featureItem isUnderlined">
+                    <a class="featureAnchor " href="#whatIdo">
+                        <span class="borderStroke">What I do</span>
+                    </a>
+                </li>
+                <!-- About Me -->
+                <li class="featureItem">
+                    <a class="featureAnchor" href="#aboutMe">
+                        <span>About Me</span>
+                    </a>
+                </li>
+                <!-- Contact Me -->
+                <li class="featureItem">
+                    <a class="featureAnchor" href="#contactMe">
+                        <span>Contact Me</span>
+                    </a>
+                </li>
+                <!-- My Work -->
+                <li class="featureItem">
+                    <a class="featureAnchor" href="#myWork">
+                        <span>My Work</span>
+                    </a>                 
+                </li>
+            </ul>
+        </div>
+        <section id= whatIdo class="wrapper">
+            <div>
+                <h3>PSD Design Conversion</h3>
+                <p>
+                    I can take designs and convert them into fully funtional, responsive websites on any device, while also
+                    providing an
+                    intutive user interface and interactive features.
+                </p>
+                <h3>API calls</h3>
+                <p>
+                    With this powerful skill set, I can access data from a variety of sources and integrate into your website,
+                    creating
+                    dynamic and interactive experiences for your users.
+                </p>
+            </div>
+        </section>
+        <section id="aboutMe" class="hidden wrapper" >
+            <div >
+                <p>Hi I am Jonathan, learning Web pixel by pixel and box by box</p>
+            </div>
+        </section>
+        <section id="contactMe" class="hidden">
+            <div >
+                <form action="/my-handling-form-page" method="post">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" />
+                        </li>
+                        <li>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email" />
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message"></textarea>
+                        </li>
+                        <li class="button">
+                            <button type="submit">Send your message</button>
+                        </li>
+            
+                        …
+                    </ul>
+                </form>
+            </div>
+        </section>
+        <section id="myWork" class="hidden">
+            <div >
+                <!-- Portfolio Item 01 -->
+                <a href="#" class="portfolio__item">
+                    <img class="portfolio__img" src="./assets/hangry_tummy.jpg" alt="">
+                </a>
+                <!-- Portfolio Item 02 -->
+                <a href="#" class="portfolio__item">
+                    <img class="portfolio__img" src="./assets/project_harper.png" alt="">
+                </a>
+                <!-- Portfolio Item 03 -->
+                <a href="#" class="portfolio__item">
+                    <img class="portfolio__img" src="./assets/the_cocktail_library.png" alt="">
+                </a>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    <footer class="wrapper footer">
+        <a href="mailto:jonathanphill@gmail.com" class="footer__link">jonathanphill@gmail.com</a>
+        <ul class="socialList">
+            <li class="social__list--item">
+                <a href="" class="social__list__link">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social__list--item">
+                <a href="" class="social__list__link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </li>
+            <li class="social__list--item">
+                <a href="" class="social__list__link">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </li>
+            <li class="social__list--item">
+                <a href="" class="social__list__link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </li>
+    
+        </ul>
+    </footer>
+    
+<script src="https://kit.fontawesome.com/c388654a1a.js" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+</body>
+</html>
