@@ -2,7 +2,8 @@
     margin-top: 3em;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 3em;    
+    margin-bottom: 3em;  
+    cursor: pointer;
 }
 .featureItem{
     // border: 2px solid yellow;
@@ -10,7 +11,7 @@
     font-weight: var(--fw-bold);
     &:hover{
        border: 1px soild transparent;
-       background-color: #22465a;
+       background-color: #1d3a49;
        opacity: .9;
        color: var(--clr-dark);
     }
@@ -23,8 +24,14 @@
 }
 
 section{
+    // border:2px solid tomato;
     margin-bottom: 5em;
     display:flex;
     justify-content:center;
-    align-items: center;   
+    align-items: center;  
+    min-width: 600px; 
+    padding: 2em 3em;
+    &:hover{
+        background-color: #1d3a49;
+    }
 }

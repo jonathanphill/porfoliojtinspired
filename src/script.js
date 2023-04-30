@@ -1,20 +1,20 @@
 console.log('it works!');
-const featureAnchors = document.querySelectorAll('.featureAnchor');
+const featureItems = document.querySelectorAll('.featureItem');
 const sections = document.querySelectorAll('section');
 const spans = document.getElementsByTagName('span');
 console.log(spans);
 
-featureAnchors.forEach((anchor)=>{
-    anchor.addEventListener('click', (event)=>{
-        // console.log(event.currentTarget);
+featureItems.forEach((link)=>{
+    link.addEventListener('click', (event)=>{
+        const featureAnchor = event.currentTarget.firstElementChild;
         for(let span in spans){
             spans[span].className="";
         }
-        const href = event.currentTarget.hash;
+        const href = featureAnchor.hash;
         sections.forEach((section) => {
         if('#'+section.id === href){
-            // console.log('true: ' + href);
-            event.target.classList.toggle("redbottomStroke");
+            const featureAnchorChild = featureAnchor.firstElementChild;
+            featureAnchorChild.classList.toggle("redbottomStroke");
             section.classList.remove('hidden');
         }else{
             // console.log('false: '+ href);
