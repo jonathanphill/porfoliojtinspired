@@ -1,21 +1,36 @@
+// This is the styling for the 4 link items which is the main navigation of the page
+
+
+// display flex to have the items diplay next to each other 
+// set justify content to space evenly and will change to space-between in a media query
+.features{
+    max-width: 608px;
+    margin: 0 auto;
+}
 .featureItems{
+    // border:1px solid tomato;
     margin-top: 3em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-bottom: 3em;  
     cursor: pointer;
 }
+
+// using custom porperties for type fluidity  styling the links in the feature items  
 .featureItem{
-    // border: 2px solid yellow;
-    padding: .5em .8em;
+    font-size: var(--step--1);
+    padding: .3em .3em;
     font-weight: var(--fw-bold);
-    &:hover{
+    &:hover,
+    &:focus{
        border: 1px soild transparent;
-       background-color: #1d3a49;
+       background-color: #244e63;
        opacity: .9;
        color: var(--clr-dark);
     }
 }
+
+// manupulating classes on load and on click using some JS
 .borderStroke,
 .redbottomStroke{
     border-bottom:3px solid transparent;
@@ -23,15 +38,26 @@
     padding: .5em .5em;
 }
 
+
+// This is the section that changes based on the user click as the user moves from link to link
+
+
 section{
-    // border:2px solid tomato;
-    margin-bottom: 5em;
+    // border:.5px solid tomato;
+    max-width: 600px;
     display:flex;
     justify-content:center;
     align-items: center;  
-    min-width: 600px; 
-    padding: 2em 3em;
+    min-height: 300px; 
+    padding: 2em 0;
     &:hover{
         background-color: #1d3a49;
+    }
+}
+
+
+@media screen and (min-width:600px){
+    .featureItem {
+            padding: .4em .8em;
     }
 }

@@ -1,6 +1,5 @@
 :root {
     --ff-primary: "Montserrat", sans-serif;
-    --ff-name: "Water Brush", cursive;
     --fw-reg: 400;
     --fw-semi-bold: 500;
     --fw-bold: 600;
@@ -10,8 +9,12 @@
     --clr-accent: #16e0bd;
     --clr-lynn: #14303f;
     --clr-dark: #4a4646;
+    --step-4: clamp(5.16rem, calc(3.72rem + 7.22vw), 8.05rem);
     --step-3: clamp(1.73rem, calc(1.49rem + 1.19vw), 2.44rem);
     --step-0: clamp(1.00rem, calc(0.92rem + 0.42vw), 1.25rem);
+    --step-1: clamp(0.81rem, calc(0.72rem + 0.47vw), 1.00rem);
+    --imageBorder-0: clamp(0.13rem, calc(0.06rem + 0.31vw), 0.25rem);
+    
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
@@ -22,12 +25,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
 
 .wrapper {
-    width: min(1280px, 80%);
+    width: min(960px, 100%);
     margin: 0 auto;
 
 }
+.wrapper1 {
+    width: min(600px, 90%);
+    margin: 0 auto;
+
+}
+
 .wrapper2 {
-    width: min(1280px, 75%);
+    width: min(960px, 75%);
     margin: 0 auto;
 }
 html{
@@ -44,11 +53,7 @@ ul{
     list-style: none;
     /* text-transform: uppercase; */
 }
-a{
-    text-decoration: none;
-    font-size: 1rem;
-    color: var(--clr-white);
-}
+
 body {
     background-color: var(--clr-lynn);
     color: var(--clr-custom);
@@ -70,7 +75,12 @@ h5,
 h6,
 p{
     margin: 0;
-    padding: 0;
+    padding: 0 .5em;
+}
+a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: var(--step-1);
 }
 
 .hidden{

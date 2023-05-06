@@ -8,7 +8,9 @@
     <title>Document</title>
 </head>
 <body>
-    <header class="wrapper headerContent">
+    <!-- Header Begins -->
+    <!-- This is where I want my image some kind of animation in the heroImg div -->
+    <header class="wrapper1 headerContent">
         <div class="heroImg">
             <p>some text</p>
 
@@ -17,43 +19,67 @@
         </div>
 
         <div class="headerText">
-            <h1>Jonathan Phillips 👋</h1>
+            <h1>Jonathan Phillips<span class="">👋</span></h1>
             <p>Growing one step at a time 🪜</p>
         </div>
 
         
     </header>
+    <!-- Header ENDS -->
+
+    <!-- ********************************************* -->
     <main class="wrapper">
-        
+        <!-- Features AKA navigation to switch to different sections -->
+        <!-- features is my main navigation where user can go from one section to another -->
         <div class="features">
-            <ul class="featureItems wrapper2">
-                <!-- What I Do -->
-                <li class="featureItem">
-                    <a class="featureAnchor " href="#whatIdo">
-                        <span class="borderStroke">What I do</span>
-                    </a>
-                </li>
+            <ul class="featureItems">
+
                 <!-- About Me -->
                 <li class="featureItem">
                     <a class="featureAnchor" href="#aboutMe">
-                        <span>About Me</span>
+                        <span class="borderStroke">About</span>
                     </a>
                 </li>
+                <!-- What I Do -->
+                <li class="featureItem">
+                    <a class="featureAnchor " href="#whatIdo">
+                        <span >What I do</span>
+                    </a>
+                </li>
+                
                 <!-- Contact Me -->
                 <li class="featureItem">
                     <a class="featureAnchor" href="#contactMe">
-                        <span>Contact Me</span>
+                        <span>Contact</span>
                     </a>
                 </li>
                 <!-- My Work -->
                 <li class="featureItem">
                     <a class="featureAnchor" href="#myWork">
-                        <span>My Work</span>
+                        <span>Projects</span>
                     </a>                 
                 </li>
             </ul>
         </div>
-        <section id= whatIdo class="wrapper">
+        <!-- Feature ENDS -->
+        <!-- ********************************************* -->
+
+        <section id="aboutMe" class="wrapper" >
+            <div class="canvasDiv">
+                <canvas id="canvas1">
+
+                </canvas>
+                <!-- <p class="canvasText">Hi I am Jonathan, learning Web, pixel by pixel and box by box</p> -->
+            </div>
+        </section>
+
+        <!-- ********************************************* -->
+        <section id="cubeAnimate" class="wrapper">
+            <div>
+                <p>Hi I am Jonathan, learning Web, pixel by pixel and box by box</p>
+            </div>
+        </section>
+        <section id= whatIdo class="hidden wrapper" >
             <div>
                 <h3>PSD Design Conversion</h3>
                 <p>
@@ -69,15 +95,11 @@
                 </p>
             </div>
         </section>
-        <section id="aboutMe" class="hidden wrapper" >
-            <div >
-                <p>Hi I am Jonathan, learning Web, pixel by pixel and box by box</p>
-            </div>
-        </section>
+        
         <section id="contactMe" class="hidden wrapper">
             <div >
                 <form action="/my-handling-form-page" method="post">
-                    <ul>
+                    <ul class="formList">
                         <li>
                             <label for="name">Name:</label>
                             <input type="text" id="name" name="user_name" />
@@ -93,25 +115,23 @@
                         <li class="button">
                             <button type="submit">Send your message</button>
                         </li>
-            
-                        …
                     </ul>
                 </form>
             </div>
         </section>
         <section id="myWork" class="hidden wrapper">
-            <div >
+            <div class="portfolio" >
                 <!-- Portfolio Item 01 -->
-                <a href="#" class="portfolio__item">
-                    <img class="portfolio__img" src="./assets/hangry_tummy.jpg" alt="">
+                <a href="#" class="hangryTummy">
+                    <img class="portfolioImg" src="./assets/hangry_tummy.jpg" alt="">
                 </a>
                 <!-- Portfolio Item 02 -->
-                <a href="#" class="portfolio__item">
-                    <img class="portfolio__img" src="./assets/project_harper.png" alt="">
+                <a href="#" class="harper">
+                    <img class="portfolioImg" src="./assets/project_harper.png" alt="">
                 </a>
                 <!-- Portfolio Item 03 -->
-                <a href="#" class="portfolio__item">
-                    <img class="portfolio__img" src="./assets/the_cocktail_library.png" alt="">
+                <a href="#" class="cocktailLib">
+                    <img class="portfolioImg" src="./assets/the_cocktail_library.png" alt="">
                 </a>
             </div>
         </section>
@@ -150,5 +170,6 @@
     
 <script src="https://kit.fontawesome.com/c388654a1a.js" crossorigin="anonymous"></script>
 <script src="./script.js"></script>
+<script src="./canvas.js"></script>
 </body>
 </html>
