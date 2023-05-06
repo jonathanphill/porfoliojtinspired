@@ -1,20 +1,23 @@
-.aboutMe{
-    padding: 0;
+#aboutMe{
+//    border:2px solid greenyellow;
+    position: relative;
 
 }
 .canvasDiv{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    padding: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+   
 }
 
 #canvas1{
+    padding: 0;
     border:1px solid tomato;
     position: absolute;
-    width: 100%;
-    height: 300px;
     top: 0;
     left: 0;
-    transform: translateY(-50%);
+    
 }
+// .canvasText{
+//     z-index: 100;
+// }
