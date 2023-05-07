@@ -43,13 +43,14 @@
 
 
 section{
-    // border:.5px solid tomato;
+    // border:.5px solid greenyellow;
     max-width: 600px;
     display:flex;
     justify-content:center;
     align-items: center;  
     min-height: 300px; 
-    padding: 2em 0;
+    padding: 2em .8em;
+    overflow: hidden;
     &:hover{
         background-color: #1d3a49;
     }

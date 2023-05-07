@@ -9,10 +9,10 @@
 // TO DO
 // Still working on this section of the page as I am not sure at this time, the gaol is to have something interesting 
 .heroImg{
-    border: 2px solid black;
+    // border: 2px solid black;
     position: relative;
     height: 30vmin;
-    background-color: var(--clr-light);
+    background-color:#1d3a49;
 }
 
 // This is my image and still need to be worked as the image is not squared
@@ -35,7 +35,26 @@
         font-size: var(--step-3);
     }
 }
+.svg{
+    // border:2px solid tomato;
+    position: absolute;
+    fill: white;
+    width: 50%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
 
+}
+.jpLogo{
+    height: 65vh;
+    opacity: .05;
+    position: fixed;
+    right: 30%;
+    top: 50%;
+    transform: translate(50%);
+    z-index: -1;
+}
 // Animation of the hand waving, I am not sure if I am ready to use this at this time, this is from an online-resource.
 
 

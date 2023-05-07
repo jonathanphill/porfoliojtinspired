@@ -52,6 +52,11 @@ textarea {
     /* Provide space to type some text */
     height: 5em;
 }
+li::marker {
+    content:"";
+    list-style: none;
+    /* ... */
+}
 
 
 button {

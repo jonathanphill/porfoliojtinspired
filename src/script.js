@@ -19,7 +19,7 @@ featureItems.forEach((link)=>{
             featureAnchorChild.classList.toggle("redbottomStroke");
             section.classList.remove('hidden');
         }else{
-            // console.log('false: '+ href);
+    
             section.classList.add('hidden');
         }
       });
@@ -27,22 +27,7 @@ featureItems.forEach((link)=>{
 
     })
 })
+const encEmail = "am9uYXRoYW5waGlsbEBnbWFpbC5jb20=";
+const contact = document.getElementById("contact");
+contact.setAttribute("href", "mailto:".concat(atob(encEmail)));
 
-// adding classes to section to restrict content as the widow size is incresed or decreased
-// window.addEventListener('resize', (event)=>{
-//     if(window.innerWidth >= 600){
-//         sections.forEach((section) => {
-//             section.classList.remove('wrapper');
-//             section.classList.add('wrapper1');
-          
-//         });
-        
-//     }
-//     else{
-//         sections.forEach((section) => {
-//           section.classList.add("wrapper");
-//            section.classList.remove("wrapper1");
-//         });
-        
-//     }
-// })
