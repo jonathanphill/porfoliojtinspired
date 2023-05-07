@@ -277,6 +277,8 @@ ul {
 
 body {
   background-color: var(--clr-lynn);
+  background-image: url("../assets/bg-grain-dark.png");
+  background-repeat: repeat;
   color: var(--clr-custom);
   margin: 0;
   font-family: var(--ff-primary);
@@ -348,11 +350,11 @@ a {
 }
 
 .jpLogo {
-  height: 65vh;
+  height: 35vh;
   opacity: 0.05;
   position: fixed;
-  right: 30%;
-  top: 50%;
+  right: 18%;
+  top: 67%;
   transform: translate(50%);
   z-index: -1;
 }

@@ -6,8 +6,6 @@
     max-width: 724px;
 }
 
-// TO DO
-// Still working on this section of the page as I am not sure at this time, the gaol is to have something interesting 
 .heroImg{
     // border: 2px solid black;
     position: relative;
@@ -15,7 +13,6 @@
     background-color:#1d3a49;
 }
 
-// This is my image and still need to be worked as the image is not squared
 // Added a responsive border, width and height to max of 960px.
 .mainImg{
     width:var(--step-4);
@@ -47,11 +44,11 @@
 
 }
 .jpLogo{
-    height: 65vh;
+    height: 35vh;
     opacity: .05;
     position: fixed;
-    right: 30%;
-    top: 50%;
+    right: 18%;
+    top: 67%;
     transform: translate(50%);
     z-index: -1;
 }
