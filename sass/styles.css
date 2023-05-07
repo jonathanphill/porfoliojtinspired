@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, footer, header, nav, section {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+figcaption, figure, main {
+  display: block;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: inherit;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border-style: none;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, input {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html [type=button], [type=reset], [type=submit] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type=checkbox], [type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+details, menu {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+:root {
+  --ff-primary: "Montserrat", sans-serif;
+  --fw-reg: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 600;
+  --clr-light: #918b8b;
+  --clr-custom: #ffb199;
+  --clr-white: #ffffff;
+  --clr-accent: #16e0bd;
+  --clr-lynn: #14303f;
+  --clr-dark: #4a4646;
+  --step-4: clamp(5.16rem, calc(3.72rem + 7.22vw), 8.05rem);
+  --step-3: clamp(1.73rem, calc(1.49rem + 1.19vw), 2.44rem);
+  --step-0: clamp(1.00rem, calc(0.92rem + 0.42vw), 1.25rem);
+  --step-1: clamp(0.81rem, calc(0.72rem + 0.47vw), 1.00rem);
+  --imageBorder-0: clamp(0.13rem, calc(0.06rem + 0.31vw), 0.25rem);
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --bs: .25em .25em .75em rgba(0, 0, 0, .25), .125em, .125em, .25em rgba(0, 0, 0, .15);
+}
+
+.wrapper {
+  width: min(960px, 100%);
+  margin: 0 auto;
+}
+
+.wrapper1 {
+  width: min(600px, 90%);
+  margin: 0 auto;
+}
+
+.wrapper2 {
+  width: min(960px, 75%);
+  margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* text-transform: uppercase; */
+}
+
+body {
+  background-color: var(--clr-lynn);
+  color: var(--clr-custom);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--step-0);
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  font-weight: var(--fw-reg);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-size: var(--step-1);
+}
+
+.hidden {
+  display: none;
+}
+
+.headerContent {
+  margin-top: 5em;
+  max-width: 724px;
+}
+
+.heroImg {
+  position: relative;
+  height: 30vmin;
+  background-color: #1d3a49;
+}
+
+.mainImg {
+  width: var(--step-4);
+  height: var(--step-4);
+  border-radius: 9999px;
+  border: var(--imageBorder-0) solid white;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-50%);
+  left: 8%;
+}
+
+.headerText {
+  margin-top: 3em;
+}
+.headerText h1 {
+  font-size: var(--step-3);
+}
+
+.svg {
+  position: absolute;
+  fill: white;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.jpLogo {
+  height: 65vh;
+  opacity: 0.05;
+  position: fixed;
+  right: 30%;
+  top: 50%;
+  transform: translate(50%);
+  z-index: -1;
+}
+
+.wave {
+  animation-name: wave-animation;
+  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;
+  /* Change to speed up or slow down */
+  animation-iteration-count: infinite;
+  /* Never stop waving :) */
+  transform-origin: 70% 70%;
+  /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.features {
+  max-width: 608px;
+  margin: 0 auto;
+}
+
+.featureItems {
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+  cursor: pointer;
+}
+
+.featureItem {
+  font-size: var(--step--1);
+  padding: 0.3em 0.3em;
+  font-weight: var(--fw-bold);
+}
+.featureItem:hover, .featureItem:focus {
+  border: 1px soild transparent;
+  background-color: #244e63;
+  opacity: 0.9;
+  color: var(--clr-dark);
+}
+
+.borderStroke,
+.redbottomStroke {
+  border-bottom: 3px solid transparent;
+  border-bottom-color: tomato;
+  padding: 0.5em 0.5em;
+}
+
+section {
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 2em 0.8em;
+  overflow: hidden;
+}
+section:hover {
+  background-color: #1d3a49;
+}
+
+@media screen and (min-width: 600px) {
+  .featureItem {
+    padding: 0.4em 0.8em;
+  }
+}
+.footer {
+  text-align: center;
+  padding: 2.5em 0;
+  font-size: var(--fs-h3);
+  margin-top: 3em;
+}
+
+.footerLink:hover,
+.socialListLink:hover {
+  opacity: 0.7;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
+}
+
+.socialList {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  padding: 0;
+}
+
+.socialListItem {
+  margin: 0 0.5em;
+}
+
+.socialListLink {
+  padding: 0.5em;
+}
+
+.footerP {
+  font-size: 0.8rem;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 100%;
+  border-radius: 0.5em;
+  font-family: var(--ff-primary);
+  font-size: var(--step-0);
+}
+
+ul {
+  list-style: none;
+  padding: 0 0.5em;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+   By default, textareas have a monospace font */
+  font-family: var(--ff-primary);
+  font-size: var(--step-0);
+  /* Uniform text field size */
+  width: 100%;
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+li::marker {
+  content: "";
+  list-style: none;
+  /* ... */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+   between the labels and their text fields */
+  font-family: var(--ff-primary);
+  font-size: var(--step-0);
+  padding: 0.4em 0.5em;
+  border-radius: 2em;
+  border: 0;
+  box-shadow: 1px 1px 11px -2px #000000;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  opacity: 0.95;
+  background-color: var(--clr-lynn);
+  box-shadow: 0 2px 15px rgba(255, 254, 254, 0.938);
+  color: var(--clr-custom);
+}
+button:focus {
+  border: 2px solid tomato;
+}
+
+@media screen and (min-width: 600px) {
+  .formList {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    display: inline-block;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 600px) {
+  .portfolio {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr auto;
+    gap: 0.5em;
+  }
+  .hangryTummy {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .cocktailLib {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .harper {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    align-self: center;
+  }
+}
+#aboutMe {
+  position: relative;
+}
+
+.canvasDiv {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#canvas1 {
+  padding: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
