@@ -456,8 +456,7 @@ section:hover {
   margin-top: 3em;
 }
 
-.footerLink:hover,
-.socialListLink:hover {
+.footerLink:hover {
   opacity: 0.7;
 }
 
@@ -473,7 +472,15 @@ section:hover {
 }
 
 .socialListItem {
-  margin: 0 0.5em;
+  padding: 0.5em 0.5em;
+  margin: 0.5em 0.5em;
+  border-radius: 10px;
+}
+.socialListItem:hover, .socialListItem:focus {
+  border: 1px soild transparent;
+  background-color: #244e63;
+  opacity: 0.9;
+  color: var(--clr-dark);
 }
 
 .socialListLink {
@@ -482,6 +489,40 @@ section:hover {
 
 .footerP {
   font-size: 0.8rem;
+}
+
+.inspiration {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.inspire {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+  border: 1px solid var(--clr-custom);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.inspire:hover {
+  width: fit-content;
+  height: 3em;
+  padding: 0 0.5em;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  opacity: 1;
+}
+
+.inspire + .inspire {
+  margin-left: 2em;
 }
 
 form {

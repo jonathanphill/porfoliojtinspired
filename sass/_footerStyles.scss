@@ -6,8 +6,7 @@
     margin-top: 3em;
 }
 
-.footerLink:hover,
-.socialListLink:hover {
+.footerLink:hover {
     opacity: .7;
 }
 
@@ -25,8 +24,16 @@
 }
 
 .socialListItem {
-
-    margin: 0 .5em;
+    padding: .5em .5em;
+    margin: .5em .5em;
+    border-radius: 10px;
+    &:hover,
+    &:focus {
+        border: 1px soild transparent;
+        background-color: #244e63;
+        opacity: .9;
+        color: var(--clr-dark);
+    }
 }
 
 .socialListLink {
@@ -35,3 +42,40 @@
 .footerP{
     font-size: .8rem;
 }
+.inspiration{
+   margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.inspire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3em;
+    height: 3em;
+    border:1px solid var(--clr-custom);
+    border-radius: 50%;
+    cursor: pointer;
+    &:hover {
+            width:fit-content;
+            height: 3em;
+            padding: 0 .5em;
+            border-radius:10px;
+            flex-direction: row;
+            justify-content:flex-start;
+            align-items: center;
+            opacity: 1;
+    
+        }
+}
+.inspire + .inspire {
+    margin-left: 2em;
+    
+
+}
+
+
+
