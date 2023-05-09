@@ -45,3 +45,45 @@ inspireS.forEach((anchor)=>{
     });
     
 })
+
+// **********************************************************//
+const aboutMeDiv = document.querySelector('.aboutMeDiv');
+const aboutMe = document.getElementById('aboutMe');
+let timerId= undefined;
+
+function createBlinkDiv() {
+  let top = Math.random() * 300;
+  let left = Math.random() * 600;
+  const blink = document.createElement("div");
+  blink.id = "blink";
+  blink.style.top = top + "px";
+  blink.style.left = left + "px";
+  aboutMeDiv.appendChild(blink);
+}
+
+function deleteBlink(name) {
+    console.log('mouse exited');
+    console.log(timerId);
+    clearInterval(timerId);
+    aboutMeDiv.innerHTML="";
+    aboutMeDiv.innerHTML = 
+    `
+     <p>Hi I am Jonathan, learning Web, pixel by pixel and box by box</p>
+    `;
+}
+
+
+aboutMe.addEventListener('mouseenter',()=>{
+    timerId = setInterval(createBlinkDiv, 200);
+    setTimeout(() => {
+      clearInterval(timerId);
+    }, 30000);
+    
+})
+aboutMe.addEventListener("mouseleave", deleteBlink);
+
+
+// **********************************************************//
+
+
+
