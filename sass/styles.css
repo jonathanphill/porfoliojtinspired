@@ -677,6 +677,7 @@ button:focus {
 }
 #aboutMe {
   position: relative;
+  cursor: pointer;
 }
 
 .canvasDiv {
