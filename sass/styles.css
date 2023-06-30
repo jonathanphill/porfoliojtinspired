@@ -700,9 +700,9 @@ button:focus {
 }
 
 .cube {
-  perspective-origin: 150% 150%;
+  position: relative;
   transform-style: preserve-3d;
-  backface-visibility: visible;
+  transform: rotateX(-10deg) rotateY(-45deg);
 }
 
 #skillSection {

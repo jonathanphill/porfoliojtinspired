@@ -1,8 +1,9 @@
-console.log('it works!');
+
 const featureItems = document.querySelectorAll('.featureItem');
 const sections = document.querySelectorAll('section');
 const spans = document.getElementsByTagName('span');
 const inspireS = document.querySelectorAll(".inspire");
+
 
 featureItems.forEach((link)=>{
     link.addEventListener('click', (event)=>{
@@ -12,14 +13,22 @@ featureItems.forEach((link)=>{
             spans[span].className="";
         }
         const href = featureAnchor.hash;
-        console.log(href);
         sections.forEach((section) => {
         if('#'+section.id === href){
             const featureAnchorChild = featureAnchor.firstElementChild;
             featureAnchorChild.classList.toggle("redbottomStroke");
-            section.classList.remove('hidden');
-        }else{
-    
+            if(section.id !=='aboutMe'){
+                skillsSection.classList.add('hidden');
+                skillsSection.style.display='none';
+                section.classList.remove("hidden");
+            }else{
+                skillsSection.classList.remove("hidden");
+                skillsSection.style.display = "flex";
+                aboutMe.classList.remove("hidden");
+            }
+            
+        }
+        else{
             section.classList.add('hidden');
         }
       });
@@ -62,8 +71,6 @@ function createBlinkDiv() {
 }
 
 function deleteBlink(name) {
-    console.log('mouse exited');
-    console.log(timerId);
     clearInterval(timerId);
     aboutMeDiv.innerHTML="";
     aboutMeDiv.innerHTML = 
@@ -91,7 +98,6 @@ const skillsSection = document.querySelector("#skillSection");
 let mouseX = 0;
 let mouseY = 0;
 const rotationValue = 300;
-console.log(skillsSection);
 
 const handleMouseMove = (event) => {
   mouseX = event.clientX;
