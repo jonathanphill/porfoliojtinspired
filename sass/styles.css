@@ -574,6 +574,7 @@ ul {
 
 form li + li {
   margin-top: 1em;
+  border: 1px solid tomato;
 }
 
 label {
@@ -616,6 +617,7 @@ li::marker {
 button {
   /* This extra margin represent roughly the same space as the space
    between the labels and their text fields */
+  margin-top: 1em;
   font-family: var(--ff-primary);
   font-size: var(--step-0);
   padding: 0.4em 0.5em;
@@ -638,10 +640,6 @@ button:focus {
 @media screen and (min-width: 600px) {
   .formList {
     padding-top: 1em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   button {
     display: inline-block;

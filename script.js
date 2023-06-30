@@ -5,6 +5,8 @@ const spans = document.getElementsByTagName('span');
 const inspireS = document.querySelectorAll(".inspire");
 
 
+
+
 featureItems.forEach((link)=>{
     link.addEventListener('click', (event)=>{
         event.preventDefault();
@@ -97,14 +99,25 @@ const cube = document.querySelector(".cube");
 const skillsSection = document.querySelector("#skillSection");
 let mouseX = 0;
 let mouseY = 0;
-const rotationValue = 300;
+const rotationValue = 320;
 
 const handleMouseMove = (event) => {
   mouseX = event.clientX;
   mouseY = event.clientY;
-  rotateX = -(mouseY / skillsSection.clientHeight - 0.6) * rotationValue;
-  rotateY = (mouseX / skillsSection.clientWidth - 0.8) * rotationValue;
+  rotateX = -(mouseY / skillsSection.clientHeight - 0.4) * rotationValue;
+  rotateY = (mouseX / skillsSection.clientWidth - 0.4) * rotationValue;
   cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 };
 
 skillsSection.addEventListener("mousemove", handleMouseMove);
+
+// .cube{
+//     position: relative;
+//         transform-style: preserve-3d;
+//         transform: rotateX(-10deg) rotateY(-45deg);
+// }
+skillsSection.addEventListener("mouseleave", ()=>{
+    cube.style.position="realtive"
+    cube.style.transformStyle = "preserve-3d"; 
+    cube.style.transform = "rotateX(-10deg) rotateY(-45deg)"; 
+});
