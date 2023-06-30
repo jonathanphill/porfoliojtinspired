@@ -102,4 +102,3 @@ const handleMouseMove = (event) => {
 };
 
 skillsSection.addEventListener("mousemove", handleMouseMove);
-skillsSection.removeEventListener("click", handleMouseMove);
