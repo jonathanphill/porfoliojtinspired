@@ -2,10 +2,16 @@
     --cube-width: 150px;
     --translateZ:75px;
 }
+.cube{
+    perspective-origin: 150% 150%;
+    transform-style: preserve-3d;
+    backface-visibility: visible;
+}
 
-// #skillSection{
-//     border:1px solid tomato;
-// }
+#skillSection{
+    display: flex;
+    justify-content: space-between;
+}
 .cube-face{
     display: flex;
     flex-direction: column;
