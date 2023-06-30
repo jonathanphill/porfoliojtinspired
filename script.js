@@ -86,4 +86,20 @@ aboutMe.addEventListener("mouseleave", deleteBlink);
 // **********************************************************//
 
 
+const cube = document.querySelector(".cube");
+const skillsSection = document.querySelector("#skillSection");
+let mouseX = 0;
+let mouseY = 0;
+const rotationValue = 300;
+console.log(skillsSection);
 
+const handleMouseMove = (event) => {
+  mouseX = event.clientX;
+  mouseY = event.clientY;
+  rotateX = -(mouseY / skillsSection.clientHeight - 0.6) * rotationValue;
+  rotateY = (mouseX / skillsSection.clientWidth - 0.8) * rotationValue;
+  cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+};
+
+skillsSection.addEventListener("mousemove", handleMouseMove);
+skillsSection.removeEventListener("click", handleMouseMove);

@@ -693,3 +693,82 @@ button:focus {
   left: 0;
   cursor: pointer;
 }
+
+:root {
+  --cube-width: 150px;
+  --translateZ:75px;
+}
+
+.cube-face {
+  display: flex;
+  flex-direction: column;
+}
+.cube-face p {
+  padding: 0;
+  font-size: 1rem;
+}
+
+.cube-face > .fa-brands {
+  font-size: 3em;
+}
+
+.cube-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cube-container {
+  perspective: 800px;
+}
+
+.cube-container .cube {
+  width: var(--cube-width);
+  height: var(--cube-width);
+  transform-style: preserve-3d;
+}
+
+.cube-container .cube-face {
+  width: var(--cube-width);
+  height: var(--cube-width);
+  position: absolute;
+  font-size: 30px;
+  background: yellow;
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cube-container .front {
+  background: #d63946;
+  transform: translateZ(var(--translateZ));
+}
+
+.cube-container .back {
+  background: #767a79;
+  transform: rotateY(180deg) translateZ(var(--translateZ));
+}
+
+.cube-container .left {
+  background: #023047;
+  color: #fff;
+  transform: rotateY(-90deg) translateZ(var(--translateZ));
+}
+
+.cube-container .right {
+  background: #3d348b;
+  color: #fff;
+  transform: rotateY(90deg) translateZ(var(--translateZ));
+}
+
+.cube-container .top {
+  background: #a8dadc;
+  transform: rotateX(90deg) translateZ(var(--translateZ));
+}
+
+.cube-container .bottom {
+  background: #ffd166;
+  transform: rotateX(-90deg) translateZ(var(--translateZ));
+}
