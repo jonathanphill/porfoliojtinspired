@@ -99,13 +99,13 @@ const cube = document.querySelector(".cube");
 const skillsSection = document.querySelector("#skillSection");
 let mouseX = 0;
 let mouseY = 0;
-const rotationValue = 320;
+const rotationValue = 250;
 
 const handleMouseMove = (event) => {
   mouseX = event.clientX;
   mouseY = event.clientY;
-  rotateX = -(mouseY / skillsSection.clientHeight - 0.4) * rotationValue;
-  rotateY = (mouseX / skillsSection.clientWidth - 0.4) * rotationValue;
+  rotateX = -(mouseY / skillsSection.clientHeight - 0.6) * rotationValue;
+  rotateY = (mouseX / skillsSection.clientWidth - 0.6) * rotationValue;
   cube.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
 };
 

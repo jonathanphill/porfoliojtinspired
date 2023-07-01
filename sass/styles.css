@@ -560,21 +560,12 @@ section:hover {
 form {
   /* Center the form on the page */
   margin: 0 auto;
-  width: 100%;
-  border-radius: 0.5em;
+  width: 80%;
   font-family: var(--ff-primary);
   font-size: var(--step-0);
 }
-
-ul {
-  list-style: none;
-  padding: 0 0.5em;
-  margin: 0;
-}
-
-form li + li {
-  margin-top: 1em;
-  border: 1px solid tomato;
+form input {
+  height: 2em;
 }
 
 label {
@@ -608,13 +599,7 @@ textarea {
   height: 5em;
 }
 
-li::marker {
-  content: "";
-  list-style: none;
-  /* ... */
-}
-
-button {
+input[type=submit] {
   /* This extra margin represent roughly the same space as the space
    between the labels and their text fields */
   margin-top: 1em;
@@ -626,15 +611,24 @@ button {
   box-shadow: 1px 1px 11px -2px #000000;
   transition: all 0.2s ease-in-out;
 }
-button:hover {
+input[type=submit]:hover {
   cursor: pointer;
   opacity: 0.95;
   background-color: var(--clr-lynn);
   box-shadow: 0 2px 15px rgba(255, 254, 254, 0.938);
   color: var(--clr-custom);
 }
-button:focus {
+input[type=submit]:focus {
   border: 2px solid tomato;
+}
+
+input[name=name],
+input[name=_replyto] {
+  margin-bottom: 1.2em;
+}
+
+#fs-frm-inputs {
+  padding: 1em 1em;
 }
 
 @media screen and (min-width: 600px) {

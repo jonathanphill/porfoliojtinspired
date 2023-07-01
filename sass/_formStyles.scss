@@ -1,24 +1,18 @@
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: 100%;
-    border-radius: .5em;
+    width: 80%;
     font-family: var(--ff-primary);
     font-size: var(--step-0);
-}
-// unorderlist inside the form element
-ul {
-    list-style: none;
-    padding: 0 .5em;
-    margin: 0;
+    input{
+        height: 2em;
+    }
 }
 
-// If there is an li 
 
-form li+li {
-    margin-top: 1em;
-    border:1px solid tomato;
-}
+
+
+
 
 label {
     /* Uniform size & alignment */
@@ -53,14 +47,10 @@ textarea {
     /* Provide space to type some text */
     height: 5em;
 }
-li::marker {
-    content:"";
-    list-style: none;
-    /* ... */
-}
 
 
-button {
+
+input[type='submit'] {
     /* This extra margin represent roughly the same space as the space
      between the labels and their text fields */
     // margin-left: 0.5em;
@@ -82,6 +72,14 @@ button {
     &:focus{
         border:2px solid tomato;
     }
+}
+input[name='name'],
+input[name='_replyto']{
+    margin-bottom: 1.2em;
+}
+
+#fs-frm-inputs{
+    padding: 1em 1em;
 }
 
 
