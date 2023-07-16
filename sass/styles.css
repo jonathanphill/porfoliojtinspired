@@ -723,7 +723,7 @@ input[name=_replyto] {
     justify-content: center;
   }
   .card {
-    --border-width: 4px;
+    --border-width: 2px;
     --bg: hsl(0 0% 10%);
     /* --alpha:calc(var(--active, 0) * 0.15); */
     width: calc(50% - 1rem);
