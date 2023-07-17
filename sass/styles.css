@@ -682,10 +682,6 @@ input[name=_replyto] {
   height: 100%;
 }
 
-.carousel__image.project_harper {
-  height: 80%;
-}
-
 .carousel__button {
   color: aliceblue;
   position: absolute;
