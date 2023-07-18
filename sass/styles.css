@@ -650,7 +650,7 @@ input[name=_replyto] {
 }
 .carousel {
   position: relative;
-  height: 600px;
+  height: 750px;
   width: 80%;
   margin: 0 auto;
 }
@@ -722,6 +722,36 @@ input[name=_replyto] {
 
 .is-hidden {
   display: none;
+}
+
+.projectDesc {
+  text-align: center;
+  margin: 1em 0;
+}
+.projectDesc h4, .projectDesc h5 {
+  margin-bottom: 0.3em;
+}
+
+.projectButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.projectButtons a button {
+  margin-right: 0.5em;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #D3CFE6;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.projectButtons a button:hover, .projectButtons a button:focus {
+  border: 1px solid white;
 }
 
 #aboutMe {
